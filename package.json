@@ -1,15 +1,16 @@
 {
-  "name": "student_management_system",
+  "name": "s504_student_management_system",
   "version": "1.0.0",
-  "description": "In this Project we build Student Management System Application",
+  "description": "This is Cli based Student Management System Application",
   "main": "index.js",
   "type": "module",
+  "bin": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Sameer",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^9.2.20"
   },
