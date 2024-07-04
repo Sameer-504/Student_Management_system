@@ -38,7 +38,7 @@ if(action.ans === "Enroll a Student"){
             message:"Please enter Your Name:\n"
         })
 
-        let trimmedStudentName = (studentName.ans).trim().toLowerCase()
+        let trimmedStudentName = (studentName.ans).trim().toUpperCase()
         let studentNameCheck = students.map(obj => obj.name)
 
         if(studentNameCheck.includes(trimmedStudentName) === false){
@@ -99,7 +99,7 @@ if(action.ans === "Enroll a Student"){
 
       }
       else if(action.ans === "Show Student status"){
-        if(students.length ! == 0){
+        if(students.length !== 0){
           let studentNamesCheck = students.map(e => e.name)
     
           let selectedStudent =await inquirer.prompt({

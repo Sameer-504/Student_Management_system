@@ -28,7 +28,7 @@ do {
             type: "input",
             message: "Please enter Your Name:\n"
         });
-        let trimmedStudentName = (studentName.ans).trim().toLowerCase();
+        let trimmedStudentName = (studentName.ans).trim().toUpperCase();
         let studentNameCheck = students.map(obj => obj.name);
         if (studentNameCheck.includes(trimmedStudentName) === false) {
             if (trimmedStudentName !== "") {
@@ -80,7 +80,7 @@ do {
         }
     }
     else if (action.ans === "Show Student status") {
-        if (students.length == 0) {
+        if (students.length !== 0) {
             let studentNamesCheck = students.map(e => e.name);
             let selectedStudent = await inquirer.prompt({
                 type: "list",
