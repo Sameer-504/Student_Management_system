@@ -1,4 +1,7 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
+import chalk from "chalk";
+console.log(chalk.blueBright.bold("\n \t Welcome to the code with Sameer Anis' - Student Management System\n"));
 class student {
     id;
     name;
